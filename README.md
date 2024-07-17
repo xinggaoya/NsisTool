@@ -10,7 +10,11 @@
 -   生成卸载程序
 -   设置程序版本号
 
-### 使用方法
+### 快速使用
+1. 直接下载编译好的安装程序，解压后直接运行即可。
+2. 为程序配置PATH环境变量，在项目新建nsis.json文件，配置好后运行即可。
+
+### 编译方法
 
 1.  **安装依赖:**
 
@@ -19,15 +23,14 @@
 
 2.  **准备配置文件:**
 
-    -   创建一个名为 `config.json` 的文件，并按照以下格式配置程序信息：
+    -   创建一个名为 `nsis.json` 的文件，并按照以下格式配置程序信息：
     ```json
     {
       "name": "程序名称",
       "company": "公司名称",
       "version": "程序版本",
       "icon_path": "图标文件路径",
-      "program_path": "程序主文件路径",
-      "output_installer_name": "输出安装程序文件名.exe"
+      "program_path": "程序主文件路径"
     }
     ```
 
@@ -48,8 +51,7 @@
   "company": "MyCompany",
   "version": "1.0.0",
   "icon_path": "path/to/icon.ico",
-  "program_path": "path/to/my_program.exe",
-  "output_installer_name": "MyProgramInstaller.exe"
+  "program_path": "path/to/my_program.exe"
 }
 ```
 
@@ -60,4 +62,4 @@
 
 ### 联系方式
 
-如有任何问题或建议，请联系 [你的邮箱地址]。 
+如有任何问题或建议，请联系 xinggaoya@qq.com。 
